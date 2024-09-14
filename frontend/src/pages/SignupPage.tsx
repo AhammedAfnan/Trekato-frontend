@@ -1,4 +1,6 @@
 import React from 'react';
+import GoogleButton from '../components/GoogleButton';
+import Button from '../components/Button';
 
 const SignupPage: React.FC = () => {
   return (
@@ -9,10 +11,7 @@ const SignupPage: React.FC = () => {
           <h1 className='text-black text-2xl font-semibold mb-4 text-center'>Create your Trekato account</h1>
           <p className="text-gray-500 mb-6 text-center">Let's get started</p>
 
-          <button className="w-full flex items-center justify-center py-2 border rounded-full mb-6">
-            <img src="/images/Google__G__logo.svg" alt="Google logo" className='mr-2' />
-            <span>Sign up with Google</span>
-          </button>
+          <GoogleButton />
 
           <div className="flex items-center mb-6">
             <div className="flex-grow border-t border-gray-300"></div>
@@ -89,9 +88,7 @@ const SignupPage: React.FC = () => {
             </label>
           </div>
 
-          <button className='w-full bg-black text-white py-2 rounded-full'>
-            Create account
-          </button>
+          <Button text='Create account' />
 
           <p className='text-gray-500 text-sm mt-4'>
             Already have an account? <a href="/login" className='text-red-500'>Log in</a>

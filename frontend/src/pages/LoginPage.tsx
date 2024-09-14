@@ -1,4 +1,6 @@
 import React from 'react'
+import GoogleButton from '../components/GoogleButton'
+import Button from '../components/Button'
 
 const LoginPage: React.FC = () => {
   return (
@@ -8,10 +10,7 @@ const LoginPage: React.FC = () => {
             <h1 className='text-black text-xl font-semibold mb-2 text-center'>Log in to your account</h1>
             <p className="text-gray-500 mb-6 text-center">Welcome back to JiveJungle</p>
 
-            <button className="w-full flex items-center justify-center py-2 border rounded-full mb-4">
-            <img src="/images/Google__G__logo.svg" alt="Google logo" className="mr-2" />
-              <span>Login with Google</span>
-            </button>
+            <GoogleButton />
 
             <div className="flex items-center mb-4">
               <div className="flex-grow border-t border-gray-300"></div>
@@ -39,9 +38,7 @@ const LoginPage: React.FC = () => {
             className='w-full border rounded-full p-2 mb-4'
           />
 
-          <button className='w-full bg-black text-white py-2 rounded-full'>
-            Sign in
-          </button>
+          <Button text='Sign in' />
 
           <p className='text-black-500 font-semibold text-sm mt-4'>
             Don't have an account? <a href="/signup" className='text-red-500 font-semibold'>Create account</a>
