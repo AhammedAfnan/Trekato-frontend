@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HiMenu, HiX } from 'react-icons/hi';
+import { HiMenu, HiX } from "react-icons/hi";
 
 interface NavbarProps {
   links: { text: string; href: string }[];
@@ -39,7 +39,11 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
           style={{ width: "auto" }} // Adjust width to fit content
         >
           {links.map((link, index) => (
-            <a key={index} href={link.href} className="text-white text-sm md:text-base">
+            <a
+              key={index}
+              href={link.href}
+              className="text-white text-sm md:text-base"
+            >
               {link.text}
             </a>
           ))}
@@ -66,6 +70,11 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
           </a>
         ))}
         <div className="flex items-center space-x-2 mt-4">
+          {/* <img
+            src="/images/Union.png"
+            alt="Bell Icon"
+            className="w-20 h-20"
+          /> */}
           <div className="w-8 h-8 rounded-full bg-violet-500 flex items-center justify-center">
             <span className="text-white text-sm">s</span>
           </div>
